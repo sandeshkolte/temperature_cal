@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+    <title>Temperature Calculator</title>
+</head>
+<body>
+    <div id="main" >
+        <!-- <img src="https://www.nsbpictures.com/wp-content/uploads/2020/08/COLORFULL-GRADIENTS-6-scaled.jpg" alt=""> -->
+<div id="card">
+<h3>Temperature Convertor</h3>
+
+    <input type="number" name="temperature" id="temp" placeholder="Enter temperature">
+    <div id="div1">
+        <label for="fromtemp">From:</label>
+        <select name="fromtemp" id="fromtemp">
+            <option value="C">Celsius</option>
+            <option value="K">Kelvin</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+
+    </div>
+
+<div id="div2">
+    <label for="totemp">To:</label>
+    <select name="totemp" id="totemp">
+        <option value="F">Fahrenheit</option>
+        <option value="C">Celsius</option>
+        <option value="K">Kelvin</option>
+    </select>
+</div>
+<div>
+    <button onclick="convert()" id="convertbtn" >Convert</button>
+</div>
+    <label for="result">Result:</label>
+    <input type="text" readonly name="result" id="resultfield">
+</div>
+    </div>
+</body>
+</html>
